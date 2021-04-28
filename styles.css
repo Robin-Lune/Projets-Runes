@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgb(37, 37, 37) 0%, rgb(10, 10, 10) 100%);
+  color: rgb(235, 235, 235);
+  align-items: center;
+  overflow: hidden;
+}
+.inner {
+  position: absolute;
+  top: 300px;
+  left: -150px;
+  z-index: -1;
+  opacity: 0.3;
+}
+.outter {
+  position: absolute;
+  top: 300px;
+  left: -150px;
+  z-index: -1;
+  opacity: 0.3;
+  animation: glow 5s ease-in-out forwards 2s;
+  cursor: pointer;
+}
+
+.glow {
+  position: absolute;
+  top: 300px;
+  left: -150px;
+  z-index: -1;
+  opacity: 0;
+  animation: glowing 5s ease-in-out forwards 2s;
+  cursor: pointer;
+  filter: blur(3px);
+}
+
+@keyframes glow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glowing {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.9;
+    scale: 1.5;
+  }
+  75% {
+    opacity: 0.1;
+    scale: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 30px;
+  align-items: center;
+  width: 100vw;
+}
+.logo h1 {
+  font-family: "homemade apple", "Katushan scrip", serif;
+  margin: 0 30px;
+}
+.nav-bar {
+  width: 50vw;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  font-family: "homemade apple", "Katushan scrip", serif;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  display: flex;
+  margin: 15px;
+  /* width: 150px; */
+  height: 48px;
+  align-items: center;
+}
+.nav-link a {
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+}
+
+.main {
+  /* background: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(
+    -135deg,
+    rgba(250, 250, 250, 0.3),
+    rgba(250, 250, 250, 0.1)
+  ); */
+  backdrop-filter: blur(0.4rem);
+  border-radius: 5px;
+  width: 90%;
+  height: 75%;
+  margin-top: 5px;
+  z-index: 10;
+  padding: 10px;
+}
+
+.tirage {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carte-rune {
+  /* background-color: rgba(25, 25, 25, 0.9); */
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 20vw;
+  margin: 20px;
+  padding: 10px;
+  font-family: "Lora", serif;
+}
+.nom-rune {
+  /* background: lightcoral; */
+  margin: 25px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+.image-rune {
+  margin: 10px;
+}
+.description-rune {
+  /* background-color: lightseagreen; */
+  margin: 25px;
+  height: 100px;
+  width: 95%;
+  text-align: center;
+  line-height: 1.5;
+}
+.inversé {
+  transform: rotate(180deg);
+}
+
+#btn {
+  width: 150px;
+  height: 50px;
+  background: rgb(12, 12, 12);
+  border: none;
+  color: rgb(235, 235, 235);
+  border-radius: 50px;
+  cursor: pointer;
+}
