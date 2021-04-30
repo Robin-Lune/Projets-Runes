@@ -14,11 +14,6 @@
     <title>Runes | Robin LEBON</title>
   </head>
   <body>
-    <div class="dessin">
-      <img src="./images/inner_vegvisir.png" alt="" class="fond inner" />
-      <img src="./images/outter_vegvisir.png" alt="" class="fond outter" />
-      <img src="./images/runes_glow.png" alt="" class="glow" />
-    </div>
     <header>
       <div class="logo">
         <h1>Runes</h1>
@@ -31,27 +26,54 @@
         </ul>
       </nav>
     </header>
-
-    <div class="main">
+    
       <div class="tirage">
-      <div class="carte-rune 1">
-        <h2 class="nom-rune 1">Fehu</h2>
-        <img src="./images/runes/fehu.png" alt="" class="image-rune 1" />
-        <p class="description-rune 3">Rune du passé</p>
+
+        <div class="carte">
+          <div class="carte__int">
+            <div class="carte__face avant">
+              <img src="./images/runes/fehu.png" alt=""/>
+              <p>passé</p>
+            </div>
+            <div class="carte__face rune 1">
+              <h2 class="nom-rune 1">Fehu</h2>
+              <img src="./images/runes/fehu.png" alt="" class="image-rune 1" />
+              <p class="description-rune 3">Rune du passé</p>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="carte">
+          <div class="carte__int">
+            <div class="carte__face avant">
+              <img src="./images/runes/uruz.png" alt=""/>
+              <p>présent</p>
+            </div>
+            <div class="carte__face rune 2">
+              <h2 class="nom-rune 2">Uruz</h2>
+          <img src="./images/runes/uruz.png" alt="" class="image-rune 2" />
+          <p class="description-rune 3">Rune du présent</p>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="carte">
+          <div class="carte__int">
+            <div class="carte__face avant">
+              <img src="./images/runes/thurisaz.png" alt=""/>
+              <p>futur</p>
+            </div>
+            <div class="carte__face rune 3">
+              <h2 class="nom-rune 3">Thurisaz</h2>
+          <img src="./images/runes/thurisaz.png" alt="" class="image-rune 3" />
+          <p class="description-rune 3">Rune du futur</p>
+            </div>   
+          </div>
+        </div>
       </div>
-      <div class="carte-rune 2">
-        <h2 class="nom-rune 2">Uruz</h2>
-        <img src="./images/runes/uruz.png" alt="" class="image-rune 2" />
-        <p class="description-rune 3">Rune du présent</p>
-      </div>
-      <div class="carte-rune 3">
-        <h2 class="nom-rune 3">Thurisaz</h2>
-        <img src="./images/runes/thurisaz.png" alt="" class="image-rune 3" />
-        <p class="description-rune 3">Rune du futur</p>
-      </div>
-    </div>
-    <button id="btn">tirer trois runes</button>
-    </div>
+      <button id="btn">cliquez pour tirer des runes</button>
 
     <script src="runes.js"></script>
   </body>

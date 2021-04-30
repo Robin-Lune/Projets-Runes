@@ -255,8 +255,8 @@ const runeArray = [
   rune24,
 ];
 
-let affichage = document.querySelectorAll(".image-rune");
-let btn = document.getElementById("btn");
+const affichage = document.querySelectorAll(".image-rune");
+const btn = document.getElementById("btn");
 nomRune = document.querySelectorAll(".nom-rune");
 descriptionRune = document.querySelectorAll(".description-rune");
 
@@ -322,3 +322,12 @@ let renversé = (valeur, numéroAffichage) => {
     affichage[numéroAffichage].classList.remove("inversé");
   }
 };
+
+const cartes = document.querySelectorAll(".carte__int");
+for(let i = 0 ; i < cartes.length ; i++){
+  cartes[i].addEventListener("click", function () {
+    cartes[i].classList.toggle("retournée");
+    console.log(cartes)
+  });
+}
+
