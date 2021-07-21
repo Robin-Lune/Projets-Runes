@@ -15,7 +15,7 @@ let rune1 = new Runes(
   "Fehu",
   "Frey",
   "Le Bétail",
-  "Succès matériel, abondance, surmonter les obstacles avec succès, les décisions devront être guidées par l'instinc et non par la raison, protection et pérennité de ce que l'on posséde.",
+  "Succès matériel, abondance, surmonter les obstacles avec succès, les décisions devront être guidées par l'instinc et non par la raison , protection et pérennité de ce que l'on posséde.",
   "Frustration dans nôtre vie que nous ne parvenons pas à combler, prendre le temps de la réflexion, revenir à l'essentiel, désire t-on vraiment ce que l'on cherche.",
   "./images/runes/fehu.png"
 );
